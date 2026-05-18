@@ -1,4 +1,14 @@
-import { FaThLarge, FaList, FaHeadphonesAlt, FaPlus, FaExclamationCircle, FaLock, FaBan, FaBox } from "react-icons/fa";
+import { 
+    FaThLarge, 
+    FaList, 
+    FaHeadphonesAlt, 
+    FaPlus, 
+    FaExclamationCircle, 
+    FaLock, 
+    FaBan, 
+    FaBox,
+    FaPuzzlePiece
+} from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 // Fungsi menuClass menerima props isActive dari NavLink
@@ -15,7 +25,7 @@ export default function Sidebar() {
             {/* Logo */}
             <div id="sidebar-logo">
                 <span id="logo-title">
-                    Restaurant GACOR <b id="logo-dot"></b>
+                    SEDAPPPPP <b id="logo-dot"></b>
                 </span>
                 <span id="logo-subtitle">Modern Admin Dashboard</span>
             </div>
@@ -46,6 +56,14 @@ export default function Sidebar() {
                         <NavLink id="menu-4" to="/products" className={menuClass}>
                             <FaBox />
                             <span>Products</span>
+                        </NavLink>
+                    </li>
+
+                     {/* Components */}
+                    <li>
+                        <NavLink id="menu-8" to="/components" className={menuClass}>
+                            <FaPuzzlePiece />
+                            <span>Components</span>
                         </NavLink>
                     </li>
 

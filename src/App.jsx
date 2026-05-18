@@ -13,6 +13,7 @@ const Forgot = React.lazy(() => import("./pages/auth/Forgot"))
 const Loading = React.lazy(() => import("./components/Loading"))
 const ProductDetail = React.lazy(() => import("./pages/main/ProductDetail"))
 const Products = React.lazy(() => import("./pages/main/Products"))
+const Components = React.lazy(() => import("./pages/main/Components"))
 
 function App() {
     return (
@@ -23,7 +24,9 @@ function App() {
                 <Route path="orders" element={<Orders />} />
                 <Route path="customers" element={<Customers />} />
                 <Route path="products" element={<Products />} />
+                <Route path="components" element={<Components />} />
                 <Route path="products/:id" element={<ProductDetail />} />
+                
 
                 <Route path="error/400" element={<ErrorPage errorCode={400} />} />
                 <Route path="error/401" element={<ErrorPage errorCode={401} />} />
