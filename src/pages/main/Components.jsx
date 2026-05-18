@@ -4,6 +4,7 @@ import Badge from "../../components/Badge";
 import Avatar from "../../components/Avatar";
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
+import Card from "../../components/Card";
 
 export default function Components() {
     return (
@@ -35,9 +36,16 @@ export default function Components() {
                     <Avatar name="syadira" />
                     <Avatar name="akbar" />
                 </div>
+
+                <Card>
+                    <h2 className="text-xl font-bold">Judul Card</h2>
+                    <p className="text-gray-600">Ini adalah isi dari card.</p>
+                </Card>
             </Container>
 
-            <Footer/>
+
+
+            <Footer />
 
         </div>
 
