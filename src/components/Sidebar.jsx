@@ -67,6 +67,13 @@ export default function Sidebar() {
                         </NavLink>
                     </li>
 
+                    <li>
+                        <NavLink id="menu-8" to="/Fiturxyz" className={menuClass}>
+                            <FaPuzzlePiece />
+                            <span>Fiturxyz</span>
+                        </NavLink>
+                    </li>
+
                     {/* Separator */}
                     <li>
                         <div id="menu-separator">
