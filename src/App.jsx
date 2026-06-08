@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import React, { Suspense } from "react";
+import Note from "./pages/main/Note";
 
 // Layout
 const MainLayout = React.lazy(() => import("./layouts/MainLayout"));
@@ -14,6 +15,7 @@ const ProductDetail = React.lazy(() => import("./pages/main/ProductDetail"));
 const Components = React.lazy(() => import("./pages/main/Components"));
 const Fiturxyz = React.lazy(() => import("./pages/main/Fiturxyz"));
 const NotFound = React.lazy(() => import("./pages/main/NotFound"));
+const note = React.lazy(() => import("./pages/main/Note"));
 
 // Auth Pages
 const Login = React.lazy(() => import("./pages/auth/Login"));
@@ -38,6 +40,7 @@ function App() {
           <Route path="products/:id" element={<ProductDetail />} />
           <Route path="components" element={<Components />} />
           <Route path="fiturxyz" element={<Fiturxyz />} />
+          <Route path="Note" element={<Note />} />
 
           {/* Error Pages */}
           <Route
